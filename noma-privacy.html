@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Noma — Privacy Policy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Fraunces:ital,wght@0,200;0,400;0,700;1,200&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0e0e0e;
+    --surface: #161616;
+    --surface2: #1e1e1e;
+    --gold: #c8a96e;
+    --gold-dim: rgba(200,169,110,0.15);
+    --text: #f0ede8;
+    --text-muted: #6b6760;
+    --border: #2a2a2a;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'DM Mono', monospace;
+    min-height: 100vh;
+    line-height: 1.7;
+  }
+
+  /* Header */
+  header {
+    border-bottom: 1px solid var(--border);
+    padding: 48px 0 40px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  header::before {
+    content: '';
+    position: absolute;
+    top: -80px; left: 50%; transform: translateX(-50%);
+    width: 300px; height: 300px;
+    background: radial-gradient(circle, rgba(200,169,110,0.12) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .logo {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 72px; height: 72px;
+    background: var(--gold);
+    border-radius: 20px;
+    margin-bottom: 24px;
+  }
+
+  .logo span {
+    font-family: 'Fraunces', serif;
+    font-size: 44px;
+    font-weight: 700;
+    color: var(--bg);
+    line-height: 1;
+  }
+
+  h1 {
+    font-family: 'Fraunces', serif;
+    font-weight: 200;
+    font-size: clamp(28px, 5vw, 42px);
+    color: var(--text);
+    letter-spacing: -0.5px;
+  }
+
+  h1 em {
+    font-style: italic;
+    color: var(--gold);
+  }
+
+  .subtitle {
+    margin-top: 10px;
+    font-size: 12px;
+    color: var(--text-muted);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  /* Main */
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 64px 24px 96px;
+  }
+
+  .update-badge {
+    display: inline-block;
+    background: var(--gold-dim);
+    border: 1px solid rgba(200,169,110,0.3);
+    color: var(--gold);
+    font-size: 11px;
+    padding: 4px 12px;
+    border-radius: 20px;
+    letter-spacing: 1px;
+    margin-bottom: 48px;
+  }
+
+  section {
+    margin-bottom: 48px;
+    padding-bottom: 48px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  section:last-child {
+    border-bottom: none;
+  }
+
+  h2 {
+    font-family: 'Fraunces', serif;
+    font-weight: 400;
+    font-size: 22px;
+    color: var(--gold);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  h2 .icon {
+    font-size: 18px;
+    opacity: 0.9;
+  }
+
+  p {
+    font-size: 14px;
+    color: #b0ada8;
+    margin-bottom: 14px;
+  }
+
+  .data-item {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 18px 20px;
+    margin-bottom: 10px;
+  }
+
+  .data-item-title {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text);
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .data-item-desc {
+    font-size: 13px;
+    color: var(--text-muted);
+    line-height: 1.6;
+  }
+
+  .no-data {
+    background: rgba(200,169,110,0.05);
+    border: 1px solid rgba(200,169,110,0.2);
+    border-radius: 12px;
+    padding: 18px 20px;
+    font-size: 13px;
+    color: var(--gold);
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+  }
+
+  .third-party {
+    background: var(--surface2);
+    border-radius: 12px;
+    padding: 18px 20px;
+    border: 1px solid var(--border);
+  }
+
+  .third-party a {
+    color: var(--gold);
+    text-decoration: none;
+    font-size: 12px;
+  }
+
+  .third-party a:hover { text-decoration: underline; }
+
+  .contact-box {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 28px;
+    text-align: center;
+  }
+
+  .contact-box a {
+    color: var(--gold);
+    text-decoration: none;
+    font-size: 14px;
+  }
+
+  .contact-box a:hover { text-decoration: underline; }
+
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 32px 24px;
+    border-top: 1px solid var(--border);
+    font-size: 11px;
+    color: var(--text-muted);
+    letter-spacing: 1px;
+  }
+
+  footer span { color: var(--gold); }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo"><span>N</span></div>
+  <h1>Noma — <em>Privacy Policy</em></h1>
+  <p class="subtitle">Osmus Studio · Informativa sulla Privacy</p>
+</header>
+
+<main>
+
+  <div class="update-badge">Ultimo aggiornamento: Marzo 2026</div>
+
+  <section>
+    <h2><span class="icon">📋</span> Panoramica</h2>
+    <p>Noma è un launcher Android sviluppato da Osmus Studio. Questa informativa descrive quali dati vengono acceduti, come vengono utilizzati e che garanzie hai come utente.</p>
+    <p>Il principio guida è semplice: <strong style="color:var(--text)">i tuoi dati rimangono sul tuo telefono</strong>. Noma non ha server, non raccoglie dati, non vende informazioni.</p>
+  </section>
+
+  <section>
+    <h2><span class="icon">🔍</span> Dati acceduti dall'app</h2>
+
+    <div class="data-item">
+      <div class="data-item-title">📒 Rubrica telefonica</div>
+      <div class="data-item-desc">Utilizzata per mostrare i tuoi contatti all'interno dell'app. I dati rimangono sul dispositivo e non vengono mai trasmessi.</div>
+    </div>
+
+    <div class="data-item">
+      <div class="data-item-title">✉️ SMS</div>
+      <div class="data-item-desc">L'app mostra il conteggio dei messaggi non letti. I contenuti degli SMS non vengono letti, memorizzati né trasmessi.</div>
+    </div>
+
+    <div class="data-item">
+      <div class="data-item-title">📍 Posizione approssimativa</div>
+      <div class="data-item-desc">Utilizzata esclusivamente per richiedere le previsioni meteo al servizio Open-Meteo. La posizione non viene memorizzata né conservata dall'app.</div>
+    </div>
+
+    <div class="data-item">
+      <div class="data-item-title">📞 Chiamate</div>
+      <div class="data-item-desc">L'app può effettuare chiamate telefoniche su tua richiesta esplicita. Non registra né trasmette dati sulle chiamate.</div>
+    </div>
+
+    <div class="data-item">
+      <div class="data-item-title">🏥 Dati personali inseriti manualmente</div>
+      <div class="data-item-desc">Tessera sanitaria, medico di base, esenzione ticket e tessere fedeltà sono salvati esclusivamente in locale sul dispositivo tramite l'archiviazione sicura di Android. Non vengono mai trasmessi a nessun server.</div>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="icon">🚫</span> Cosa NON facciamo</h2>
+    <div class="no-data">
+      <span style="font-size:20px">✓</span>
+      <div>Noma <strong>non raccoglie</strong>, non trasmette e non vende dati personali a terze parti. Non contiene pubblicità. Non utilizza sistemi di analytics, tracciamento o profilazione.</div>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="icon">🌐</span> Servizi di terze parti</h2>
+    <div class="third-party">
+      <div class="data-item-title" style="margin-bottom:8px">Open-Meteo</div>
+      <div class="data-item-desc" style="margin-bottom:10px">Riceve le coordinate GPS approssimative per fornire le previsioni meteo locali. Nessun altro dato viene condiviso.</div>
+      <a href="https://open-meteo.com/en/terms" target="_blank">→ Privacy policy di Open-Meteo</a>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="icon">💾</span> Conservazione e cancellazione</h2>
+    <p>Tutti i dati sono conservati localmente sul dispositivo dell'utente. Non esistono backup su server remoti.</p>
+    <p>Puoi eliminare tutti i dati in qualsiasi momento tramite: <strong style="color:var(--text)">Impostazioni Android → App → Noma → Cancella dati</strong>, oppure disinstallando l'app.</p>
+  </section>
+
+  <section>
+    <h2><span class="icon">✉️</span> Contatti</h2>
+    <div class="contact-box">
+      <p style="margin-bottom:12px;font-size:13px">Per qualsiasi domanda relativa alla privacy:</p>
+      <a href="mailto:massimo.preiano@maag.com">massimo.preiano@maag.com</a>
+      <p style="margin-top:16px;font-size:12px;color:var(--text-muted)">Osmus Studio · Milano, Italia</p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <span>Noma</span> · Developed by <span>Osmus Studio</span> · Privacy Policy v1.0
+</footer>
+
+</body>
+</html>
